@@ -2,48 +2,59 @@
     display: grid;
     height: 293px;
     padding: 92px 50px 96px;
+    grid-template-columns: 1fr min-content 1fr;
     align-items: center;
-    grid-template-columns: repeat(3, 1fr);
     
 }
 
-.header-menu {
+.header__menu {
     display: flex;
-    gap: 32px; 
-    min-width: 392px;
+    gap: 33px;   
     list-style-type: circle;
     font-weight: 400;
     font-size: 18px;
 }
 
-.header-menu-first-element {
+.header__links-list-item_no-bullit {
     list-style: none;
 }
 
-.logo {
-  width: 148px;
-  align-self: center;
-
+.header__logo {
+  width: 135px;
+  height: 105px;
 }
 
 .address {
-    font-family: Raleway;
-    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     font-style: normal;
     font-size: 18px;
     line-height: 24.3px;
-    letter-spacing: 0%;
-    justify-self: end;
+    justify-self: right;
+    min-width: 240px;
+    text-underline-offset: 4px;
 }
+
 .cover {
-    display: flex;
+    position: relative;
+    /*display: flex;*/
     box-sizing: border-box;
-    height: 757px;
+    min-height: 757px;
     background-image: url(../images/cover.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center top;
+    background-position: center;
     color: white;
+    z-index: -1;
+}
+
+.overlay {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  z-index: 0;
 }
 
 .main-name {
@@ -52,21 +63,28 @@
     font-size: 100px;
     text-transform: uppercase;
     letter-spacing: 30%;
+    z-index: 1;
+    display: inline-block;
 }
 
-.main-name-first {
-    margin-left: 50px;
-    margin-top: 165px;
+.aligned-text_left {
+    
+    align-items: start;
+    /*margin-left: 50px;
+    margin-top: 165px;*/
+    
 }
 
-.main-name-second {
-    margin-left: 44.5px;
-    margin-top: 300px;
+.aligned-text_center {
+    align-items: center;
+    /*margin-left: 44.5px;
+    margin-top: 300px;*/
 }
 
-.main-name-third {
-    margin-left: 20px;
-    margin-top: 435px;
+.aligned-text_right {
+    align-items: end;
+    /*margin-left: 20px;
+    margin-top: 435px;*/
 }
 
 .opacity {
