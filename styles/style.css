@@ -38,15 +38,14 @@
 
 .cover {
     position: relative;
-    /*display: flex;*/
     box-sizing: border-box;
-    min-height: 757px;
+    height: 757px;
     background-image: url(../images/cover.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     color: white;
-    z-index: -1;
+    padding: 165px 50px 207px;
 }
 
 .overlay {
@@ -54,37 +53,35 @@
   position: absolute;
   inset: 0;
   background: rgba(0,0,0,0.6);
-  z-index: 0;
+
 }
 
-.main-name {
+.cover__title {
+    display: grid;
+    position: relative;
+    row-gap: 17px;
+    z-index: 1;
     font-weight: 700;
     font-style: Bold;
     font-size: 100px;
     text-transform: uppercase;
-    letter-spacing: 30%;
-    z-index: 1;
-    display: inline-block;
+    letter-spacing: 30px;
 }
 
-.aligned-text_left {
-    
-    align-items: start;
-    /*margin-left: 50px;
-    margin-top: 165px;*/
-    
+.aligned-text_left { 
+    align-self: start;
 }
 
 .aligned-text_center {
     align-items: center;
-    /*margin-left: 44.5px;
-    margin-top: 300px;*/
+    justify-self: center;
+    margin-left: 30px;
 }
 
 .aligned-text_right {
     align-items: end;
-    /*margin-left: 20px;
-    margin-top: 435px;*/
+    justify-self: end;
+    margin-right: -30px;
 }
 
 .opacity {
@@ -92,27 +89,31 @@
     object-fit: cover;
 }
 
-.description {
+.cover__description {
     display: flex;
-    gap: 107px;
+    position: relative;
+    gap: 105px;
     font-weight: 400;
     font-style: Regular;
-    font-size: 22px;
+    font-size: 23px;
     text-transform: uppercase;
-    margin-left: 50px;
-    margin-top: 118px;
+    margin-top: 104px;
+    word-spacing: 15px;
+    white-space: nowrap;
+    align-items: center;
     
 }
-.bottom {
-    border: 10px solid red; /* сплошная граница в 1 пиксель красного цвета */
-    right: 0px;
+.bet-button {
+    border: 1px solid white; /* сплошная граница в 1 пиксель красного цвета */
+    background-color: rgba(0,0,0,0);
+    color: white;
+    margin-top: 00px;
+    padding: 12px 32px 11px 31px;
+    font-size: 22px;
+    text-transform: uppercase;
+    white-space: nowrap;
 }
-/*.popup {
-  position: fixed;
-  inset: 0;
-  background-color: rgb(0 0 0/0.8);
-  display: flex;
-}*/ 
+
 
 .lots {
     margin: 180px 24px 120px;
