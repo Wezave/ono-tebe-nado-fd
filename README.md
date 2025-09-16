@@ -1,1 +1,1 @@
-https://github.com/Wezave/ono-tebe-nado-fde
+https://github.com/Wezave/ono-tebe-nado-fd
