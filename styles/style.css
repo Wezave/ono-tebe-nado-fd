@@ -15,7 +15,6 @@
 
 .header__links-list-item_no-bullit {
     list-style: none;
-
 }
 
 .header__link_active {
@@ -95,8 +94,8 @@
     margin-top: 104px;
     word-spacing: 15px;
     white-space: nowrap;
-    
 }
+
 .bet-button {
     border: 1px solid white;
     background-color: rgba(0,0,0,0);
@@ -110,7 +109,6 @@
 
 .lots__heading {
     font-weight: 700;
-    font-style: Bold;
     font-size: 40px;
     text-transform: uppercase;
     margin: 180px auto 27px 40px;
@@ -165,7 +163,6 @@
     grid-row: 1/2;
     grid-column: 1/2;
     font-weight: 700;
-    font-style: Bold;
     font-size: 22px;
     text-transform: uppercase;
     text-decoration: underline;
@@ -223,7 +220,6 @@
     grid-column: 2/3;
     grid-row: 1/2;
     font-weight: 700;
-    font-style: Bold;
     font-size: 40px;
     text-transform: uppercase;
 }
