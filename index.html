@@ -14,7 +14,9 @@
       <nav>
         <ul class="header__menu">
           <li class="header__links-list-item_no-bullit">
-            главная
+            <a href="#" class="header__link_active">
+              главная
+            </a>
           </li>
           <li>
             <a href="#lots">
@@ -40,8 +42,6 @@
         </a>
         <p>
           наб. Принсенграхт 263-
-        </p>
-        <p>
           265, Амстердам
         </p>
       </address>
@@ -75,44 +75,55 @@
           Лоты
         </h2>
         <ul class="lots__card-list">
-          <li class="card card_type_film">
-            <div class="overlay">
-            </div>
-            <a class="card-link">
-                Фильм режиссёра, который бросил киношколу
-            </a>
-            <article class="card__text">
-              Не просто бросил, а ушёл с первой лекции. 
-              Какой была бы ваша ставка, если бы вы не знали, 
-              что режиссёр — Пол Томас Андерсон?
-            </article>
+          <article>
+            <a href="#" class="card__link">
+            <li class="card card_type_film">
+              
+                <div class="overlay"></div>
+                <a class="card__title">
+                    Фильм режиссёра, который бросил киношколу
+                </a>
+                <p class="card__text">
+                  Не просто бросил, а ушёл с первой лекции. 
+                  Какой была бы ваша ставка, если бы вы не знали, 
+                  что режиссёр — Пол Томас Андерсон?
+                </p>
+              </a>
+            </li> 
+          </article>
+          <article>
+            <li class="card card_type_book">
+                <a href="#">
+                  <div class="overlay"></div>      
+                  <a class="card__title">
+                      Книга, где описан один скучный день из жизни рекламного агента
+                  </a>
+                  <p class="card__text">
+                    Объёмом почти в тысячу страниц. Иногда без знаков препинания 
+                    и с переходами на древнеанглийский. В ней одновременно рассказывается 
+                    о 16 июня 1904 года и об истории литературы, начиная с античных времён. 
+                    И это всё накладывается на эпическую поэму Гомера. 
+                    Сколько бы вы поставили на «Улисса» Джеймса Джойса?
+                  </p>
+                </a>
           </li> 
-          <li class="card card_type_book">
-            <div class="overlay"></div>
-            <a class="card-link">
-                Книга, где описан один скучный день из жизни рекламного агента
-            </a>
-            <article class="card__text">
-              Объёмом почти в тысячу страниц. Иногда без знаков препинания 
-              и с переходами на древнеанглийский. В ней одновременно рассказывается 
-              о 16 июня 1904 года и об истории литературы, начиная с античных времён. 
-              И это всё накладывается на эпическую поэму Гомера. 
-              Сколько бы вы поставили на «Улисса» Джеймса Джойса?
-            </article>
-          </li> 
-          <li class="card card_type_picture">
-            <div class="overlay">
-            </div>
-            <a class="card-link">
-                Картина, которую повторит даже 5-летний сын маминой подруги
-            </a>
-            <article class="card__text">
-              Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то 
-              похожее на инфузорию-туфельку. Никаких полей, лесов, котиков... 
-              Сколько бы вы на такое поставили, если бы не знали, 
-              что это — одна из революционных работ Кандинского?
-            </article>
-          </li> 
+          </article>
+          <article>
+            <li class="card card_type_picture">
+              <a href="#">
+                <div class="overlay"></div>
+                <a class="card__title">
+                    Картина, которую повторит даже 5-летний сын маминой подруги
+                </a>
+                <p class="card__text">
+                  Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то 
+                  похожее на инфузорию-туфельку. Никаких полей, лесов, котиков... 
+                  Сколько бы вы на такое поставили, если бы не знали, 
+                  что это — одна из революционных работ Кандинского?
+                </p>
+              </a>
+            </li> 
+          </article>
         </ul>
         <a href="#" class="lots__look-more-link">посмотреть больше</a>
       </section>
@@ -152,10 +163,7 @@
           info@sobaka.ge
         </a>
         <p>
-          наб. Принсенграхт 263-265,
-        </p>
-        <p>
-          Амстердам
+          наб. Принсенграхт 263-265, Амстердам
         </p>
       </address>
       <nav> 
@@ -178,17 +186,17 @@
       <div>
         <ul class="footer__social-list">
           <li>
-            <a href="#"> 
+            <a href="#" target="_blank"> 
               <img src="./images/pinterest.svg" alt="pinterest" class="footer__social-list-item">
             </a>
           </li>
           <li>
-            <a href="#"> 
+            <a href="#" target="_blank"> 
               <img src="./images/vk.svg" alt="vk" class="footer__social-list-item">
             </a>
           </li>
           <li>
-            <a href="#"> 
+            <a href="#" target="_blank"> 
               <img src="./images/yt.svg" alt="yt" class="footer__social-list-item">
             </a>
           </li>

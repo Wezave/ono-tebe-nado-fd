@@ -2,7 +2,6 @@
     display: grid;
     grid-template-columns: 1fr min-content 1fr;
     align-items: center;
-    height: 293px;
     padding: 92px 50px 96px;
 }
 
@@ -16,6 +15,11 @@
 
 .header__links-list-item_no-bullit {
     list-style: none;
+
+}
+
+.header__link_active {
+    text-decoration: none;
 }
 
 .header__logo {
@@ -33,13 +37,14 @@
     line-height: 24.3px;
     min-width: 240px;
     text-underline-offset: 4px;
+    width: 240px;
 }
 
 .cover {
     position: relative;
     box-sizing: border-box;
-    height: 757px;
-    padding: 165px 50px 207px;
+    min-height: 757px;
+    padding: 165px 50px 0px;
     background-image: url(../images/cover.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -48,7 +53,6 @@
 }
 
 .overlay {
-  content: "";
   position: absolute;
   inset: 0;
   background: rgba(0,0,0,0.6);
@@ -60,7 +64,6 @@
     row-gap: 17px;
     z-index: 1;
     font-weight: 700;
-    font-style: Bold;
     font-size: 100px;
     text-transform: uppercase;
     letter-spacing: 30px;
@@ -82,11 +85,6 @@
     margin-right: -30px;
 }
 
-.opacity {
-    background-color: rgb(0 0 0/0.6);
-    object-fit: cover;
-}
-
 .cover__description {
     display: flex;
     position: relative;
@@ -103,11 +101,11 @@
     border: 1px solid white;
     background-color: rgba(0,0,0,0);
     color: white;
-    margin-top: 00px;
     padding: 12px 32px 11px 31px;
     font-size: 22px;
     text-transform: uppercase;
     white-space: nowrap;
+    cursor: pointer;
 }
 
 .lots__heading {
@@ -157,7 +155,11 @@
     background-image: url(../images/card-lot-03.jpg);
 }
 
-.card-link {
+.card__link {
+    height: 100%;
+}
+
+.card__title {
     z-index: 1;
     height: 100%;
     grid-row: 1/2;
@@ -173,6 +175,7 @@
 }
 
 .card__text {
+    margin-top: auto;
     z-index: 1;
     grid-row: 2/3;
     grid-column: 1/2;
@@ -202,7 +205,7 @@
     align-items: center;
     height: 240px;
     width: 240px;
-    border-radius: 100%/100%;
+    border-radius: 50%;
     background-color: black;
     margin-left: 47px;
     grid-column: 1/2;
@@ -210,8 +213,8 @@
 }
 
 .about__logo-image {
-    width: 141.5449676513672px;
-    height: 112.55000305175781px;
+    width: 141px;
+    height: 112px;
 }
 
 .about__title {
@@ -238,7 +241,6 @@
 
 .footer {
     display: grid;
-    height: 180px;
     margin-top: 180px;
     padding: 0px 50px;
     grid-template-columns: repeat(3, 1fr);
