@@ -184,7 +184,7 @@
 
 .about {
     display: grid;
-    margin: 0px 24px 180px;
+    margin: 0px 24px;
     grid-template-columns: 334px 1fr;
     grid-template-rows: min-content 1fr;
     gap: 5px 25px;
@@ -226,9 +226,7 @@
 
 .footer {
     display: grid;
-    margin-top: 180px;
-    min-height: 180px; 
-    padding: 0px 50px;
+    padding: 180px 50px 82px;
     grid-template-columns: repeat(3, 1fr);
 }
 
